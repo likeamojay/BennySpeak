@@ -4,7 +4,8 @@
 
 ## My files
 .DS_Store
-Credentials_me.plist
+BennySpeak/.DS_Store
+BennySpeak/Credentials_me.plist
 
 ## User settings
 xcuserdata/
