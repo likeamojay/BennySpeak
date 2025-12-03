@@ -64,8 +64,6 @@ class JLAnalytics {
         print("JLAnalytics: report saved to \(url.path)")
     
         self.clearSavedData()
-        
-        Thread.sleep(forTimeInterval: 10.0) // Wait so we can see file path in the console and go to it in Finder
     }
 
     func resetLaunchState() {

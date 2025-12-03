@@ -59,12 +59,13 @@ final class BennySpeakUITests: XCTestCase {
                 app.textFields["search_text_field"].waitForExistence(timeout: 5.0),
                 "search_text_field did not appear in time"
             )
-            app.terminate()
             
-            if i == 9 {
-                print("Check the app console log for file path")
-                Thread.sleep(forTimeInterval: 10.0)
+            if i == iterations {
+                print("Check the app console log for \"report saved to\"")
+                Thread.sleep(forTimeInterval: 30.0)
             }
+
+            app.terminate()
         }
     }
 }
