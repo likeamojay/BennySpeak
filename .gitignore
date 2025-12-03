@@ -2,6 +2,10 @@
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
+## My files
+.DS_Store
+Credentials_me.plist
+
 ## User settings
 xcuserdata/
 
