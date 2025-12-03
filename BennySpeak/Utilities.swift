@@ -8,6 +8,7 @@
 import AVFoundation
 
 private enum Credentials {
+
     static func value(forKey key: String) -> String? {
         guard let url = Bundle.main.url(forResource: "Credentials", withExtension: "plist") else {
             print("[Credentials] Missing Credentials.plist in bundle.")
@@ -84,7 +85,6 @@ class Utilities {
                 print("Speech: No English voices available. Available voices: \(available)")
             }
             
-            // Optional tuning (adjust as desired)
             utterance.rate = AVSpeechUtteranceDefaultSpeechRate
             utterance.pitchMultiplier = 1.0
             utterance.postUtteranceDelay = 0.0
