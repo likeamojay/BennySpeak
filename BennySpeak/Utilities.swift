@@ -31,7 +31,7 @@ private enum Credentials {
 }
 
 var googleApiKey: String {
-    if let v = Credentials.value(forKey: "GoogleApiKey") { return v }
+    if let v = Credentials.value(forKey: "googleApiKey") { return v }
     assertionFailure("googleApiKey missing from Credentials.plist")
     return ""
 }
